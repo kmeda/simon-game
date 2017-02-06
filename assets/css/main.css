@@ -1,9 +1,25 @@
 @import 'https://fonts.googleapis.com/css?family=Fira+Sans';
-.device-layout {
-  width: 452px;
-  height: 530px;
-  margin: 0 auto; }
-  .device-layout .device {
+.wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 450px;
+  height: 450px;
+  background: #282729;
+  -webkit-border-radius: 100%;
+          border-radius: 100%;
+  -webkit-box-shadow: 0 0 40px rgba(0, 0, 0, 0.8), inset 0 0 30px #487a77;
+          box-shadow: 0 0 40px rgba(0, 0, 0, 0.8), inset 0 0 30px #487a77; }
+  .wrapper .container {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -13,154 +29,98 @@
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
-    width: 452px;
-    height: 430px;
-    margin-top: 100px;
-    -webkit-border-radius: 12px;
-            border-radius: 12px;
-    -webkit-box-shadow: 5px 10px 50px 10px rgba(0, 0, 0, 0.68);
-            box-shadow: 5px 10px 50px 10px rgba(0, 0, 0, 0.68); }
-    .device-layout .device .header {
-      height: 30px;
-      width: 100%;
-      background-color: #90937a;
-      -webkit-border-top-right-radius: 12px;
-              border-top-right-radius: 12px;
-      -webkit-border-top-left-radius: 12px;
-              border-top-left-radius: 12px;
-      -webkit-box-shadow: inset -1px -6px 12px 0.1px #89847e;
-              box-shadow: inset -1px -6px 12px 0.1px #89847e; }
-    .device-layout .device .screen {
-      height: 100px;
-      width: 100%;
-      background-color: #282e25;
-      border-bottom: 1px solid white; }
-      .device-layout .device .screen .main-screen {
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-pack: end;
-        -webkit-justify-content: flex-end;
-            -ms-flex-pack: end;
-                justify-content: flex-end;
-        -webkit-box-align: center;
-        -webkit-align-items: center;
-            -ms-flex-align: center;
-                align-items: center;
-        width: 100%;
-        height: 70%;
-        color: white;
-        font-size: 3em;
-        text-align: right;
-        margin-left: -10px; }
-      .device-layout .device .screen .chaining {
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-pack: end;
-        -webkit-justify-content: flex-end;
-            -ms-flex-pack: end;
-                justify-content: flex-end;
-        -webkit-box-align: center;
-        -webkit-align-items: center;
-            -ms-flex-align: center;
-                align-items: center;
-        width: 100%;
-        height: 30%;
-        color: #a2a0a0;
-        font-size: 1.5em;
-        text-align: right;
-        margin-left: -10px; }
-    .device-layout .device .keys {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 420px;
+    height: 420px;
+    position: absolute; }
+    .wrapper .container .top-half {
       display: -webkit-box;
       display: -webkit-flex;
       display: -ms-flexbox;
       display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -webkit-flex-direction: column;
-          -ms-flex-direction: column;
-              flex-direction: column;
-      height: 300px;
-      width: 100%;
-      background-color: white;
-      -webkit-border-bottom-right-radius: 12px;
-              border-bottom-right-radius: 12px;
-      -webkit-border-bottom-left-radius: 12px;
-              border-bottom-left-radius: 12px; }
-      .device-layout .device .keys .row-1, .device-layout .device .keys .row-2, .device-layout .device .keys .row-3, .device-layout .device .keys .row-4, .device-layout .device .keys .row-5 {
-        height: 60px;
-        width: 100%;
-        border-bottom: 1px solid white; }
-        .device-layout .device .keys .row-1 button, .device-layout .device .keys .row-2 button, .device-layout .device .keys .row-3 button, .device-layout .device .keys .row-4 button, .device-layout .device .keys .row-5 button {
-          border: none;
-          outline: none; }
-      .device-layout .device .keys .col-1, .device-layout .device .keys .col-2, .device-layout .device .keys .col-3 {
-        display: -webkit-inline-box;
-        display: -webkit-inline-flex;
-        display: -ms-inline-flexbox;
-        display: inline-flex;
-        width: 113px;
-        height: 100%;
-        background-color: #908989;
-        border-right: 1px solid white !important; }
-      .device-layout .device .keys .col-4 {
-        display: -webkit-inline-box;
-        display: -webkit-inline-flex;
-        display: -ms-inline-flexbox;
-        display: inline-flex;
-        width: 113px;
-        height: 100%;
-        color: white; }
-      .device-layout .device .keys .col-1, .device-layout .device .keys .col-2, .device-layout .device .keys .col-3, .device-layout .device .keys .col-4 {
-        -webkit-box-pack: center;
-        -webkit-justify-content: center;
-            -ms-flex-pack: center;
-                justify-content: center;
-        -webkit-box-align: center;
-        -webkit-align-items: center;
-            -ms-flex-align: center;
-                    -ms-grid-row-align: center;
-                align-items: center;
-        text-align: center;
-        -webkit-box-shadow: inset -2px -2px 15px 3px #282625;
-                box-shadow: inset -2px -2px 15px 3px #282625;
-        font-family: "Fira Sans";
-        font-size: 1.2em;
-        cursor: pointer; }
-        .device-layout .device .keys .col-1:active, .device-layout .device .keys .col-2:active, .device-layout .device .keys .col-3:active, .device-layout .device .keys .col-4:active {
-          -webkit-box-shadow: inset -2px -1px 10px 1px #282625;
-                  box-shadow: inset -2px -1px 10px 1px #282625; }
-      .device-layout .device .keys .row-1 .col-4, .device-layout .device .keys .row-2 .col-4, .device-layout .device .keys .row-3 .col-4, .device-layout .device .keys .row-4 .col-4, .device-layout .device .keys .row-5 .col-4 {
-        background-color: #ff9900;
-        -webkit-box-shadow: inset -2px -2px 15px 3px #282625;
-                box-shadow: inset -2px -2px 15px 3px #282625; }
-        .device-layout .device .keys .row-1 .col-4:active, .device-layout .device .keys .row-2 .col-4:active, .device-layout .device .keys .row-3 .col-4:active, .device-layout .device .keys .row-4 .col-4:active, .device-layout .device .keys .row-5 .col-4:active {
-          -webkit-box-shadow: inset -2px -1px 10px 1px #282625;
-                  box-shadow: inset -2px -1px 10px 1px #282625; }
-      .device-layout .device .keys .row-5 {
-        border: none !important;
-        -webkit-border-bottom-left-radius: 12px;
-                border-bottom-left-radius: 12px;
-        -webkit-border-bottom-right-radius: 12px;
-                border-bottom-right-radius: 12px; }
-      .device-layout .device .keys .row-5 .col-1 {
-        -webkit-border-bottom-left-radius: 12px;
-                border-bottom-left-radius: 12px;
-        width: 226px; }
-      .device-layout .device .keys .row-5 .col-4 {
-        -webkit-border-bottom-right-radius: 12px;
-                border-bottom-right-radius: 12px; }
+      width: 420px;
+      height: 210px; }
+      .wrapper .container .top-half .square-top-left {
+        width: 190px;
+        height: 190px;
+        background: #4db1d1;
+        border: 10px solid #282729;
+        -webkit-border-top-left-radius: 100%;
+                border-top-left-radius: 100%; }
+        .wrapper .container .top-half .square-top-left:active {
+          background: #00ffff; }
+      .wrapper .container .top-half .square-top-right {
+        width: 190px;
+        height: 190px;
+        background: #e9633f;
+        border: 10px solid #282729;
+        -webkit-border-top-right-radius: 100%;
+                border-top-right-radius: 100%; }
+        .wrapper .container .top-half .square-top-right:active {
+          background: #e01515; }
+    .wrapper .container .bottom-half {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      width: 420px;
+      height: 210px; }
+      .wrapper .container .bottom-half .square-bottom-left {
+        width: 190px;
+        height: 190px;
+        background: #b9af30;
+        border: 10px solid #282729;
+        -webkit-border-bottom-left-radius: 100%;
+                border-bottom-left-radius: 100%; }
+        .wrapper .container .bottom-half .square-bottom-left:active {
+          background: #ffed0b; }
+      .wrapper .container .bottom-half .square-bottom-right {
+        width: 190px;
+        height: 190px;
+        background: #4da842;
+        border: 10px solid #282729;
+        -webkit-border-bottom-right-radius: 100%;
+                border-bottom-right-radius: 100%; }
+        .wrapper .container .bottom-half .square-bottom-right:active {
+          background: #1cff00; }
+
+.center {
+  width: 220px;
+  height: 220px;
+  -webkit-border-radius: 100%;
+          border-radius: 100%;
+  background: white;
+  position: absolute;
+  border: 12px solid #282729; }
 
 body {
   margin: 0;
   padding: 0;
   height: 100%;
   width: 100%;
-  background-color: #404041; }
-
-p {
+  background: -webkit-gradient(radial, 50% 50%, 300, 50% 50%, 1000, from(#487a77), to(#fff));
   padding: 0;
   margin: 0; }
+
+.main-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100vw;
+  height: 100vh; }
