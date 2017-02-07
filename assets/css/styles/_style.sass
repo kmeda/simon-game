@@ -60,9 +60,110 @@ $square-height: 190px
 
 .center
   //display: none
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
   width: 220px
   height: 220px
   border-radius: 100%
   background: white
   position: absolute
   border: 12px solid #282729
+  .text
+    font-size: 2.7em
+  .label
+    font-size: 0.7em
+    font-weight: bold
+    margin-top: 5px
+  .screen-wrap
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    width: 50px
+    height: 50px
+    .screen
+      display: flex
+      justify-content: center
+      align-items: center
+      width: 50px
+      height: 50px
+      background: #012806
+      color: red
+      font-family: 'pt mono'
+      border: 1px solid white
+      box-shadow: 0 0 20px rgba(0,0,0,0.5) ,inset 0 0 6px #fff
+  .wrap
+    display: flex
+    justify-content: space-around
+    width: 150px
+    height: 50px
+    margin-top: 10px
+    .start-wrap
+      display: flex
+      flex-direction: column
+      align-items: center
+      width: 50px
+      height: 50px
+      .start
+        width: 25px
+        height: 25px
+        background: #66e618
+        border-radius: 100%
+        border: 2px solid white
+        box-shadow: 0 0 13px rgba(0,0,0,0.5), inset 0 0 5px rgba(0,0,0,0.5)
+        &:active
+
+          box-shadow: 0 0 30px #66e618, inset 0 0 5px rgba(0,0,0,0.5)
+
+    .strict-wrap
+      display: flex
+      flex-direction: column
+      align-items: center
+      width: 50px
+      height: 50px
+      .strict
+        width: 25px
+        height: 25px
+        background: rgba(0,0,0,0.7)
+        border-radius: 100%
+        border: 2px solid white
+        box-shadow: 0 0 13px rgba(0,0,0,0.5), inset 0 0 5px rgba(0,0,0,0.5)
+        &:active
+          border: 2px solid #fa422f
+          box-shadow: 0 0 30px #ff1800, inset 0 0 20px rgba(0,0,0,0.5)
+
+  .onoff
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 60px
+    height: 22px
+    background: rgba(0,0,0,0.7)
+    border-radius: 2px
+    margin-top: 10px
+    font-size: 0.6em
+    color: white
+    position: relative
+    border: 1px solid white
+    box-shadow: 0 0 5px rgba(0,0,0,0.7)
+
+    .left
+      width: 50%
+      margin-left: 9px
+    .right
+      width: 50%
+      margin-right: 1px
+    .slider
+      //display: none
+      width: 30px
+      height: 20px
+      background: #1f7ce8
+      border-radius: 2px
+      position: absolute
+      margin-left: -14px
+      border: 1px solid rgba(0,0,0,0.5)
+      box-shadow: inset 0 0 5px rgba(255,255,255,0.7)
+      &:active
+        transform: translateX(28px)
