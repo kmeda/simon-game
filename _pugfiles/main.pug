@@ -1,15 +1,16 @@
 .wrapper
   .container
     .top-half
-      .square-top-left
-      .square-top-right
+      .square-top-left.color(val = 1)
+      .square-top-right.color(val = 2)
     .bottom-half
-      .square-bottom-left
-      .square-bottom-right
+      .square-bottom-left.color(val = 3)
+      .square-bottom-right.color(val = 4)
     .center
       .text Simon
       .screen-wrap
-        .screen __
+        .screen
+          .count __
         .label COUNT
       .wrap
         .start-wrap
@@ -19,6 +20,6 @@
           .strict
           .label STRICT
       .onoff
-        .left ON
-        .right OFF
+        .left OFF
+        .right ON
         .slider
