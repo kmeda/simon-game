@@ -26,7 +26,7 @@ $square-height: 190px
       .square-top-left
         width: $square-width
         height: $square-height
-        background: #4db1d1
+        // background: #4db1d1
         background: #00ffff
         opacity: 0.6
         border: 10px solid #282729
@@ -37,7 +37,7 @@ $square-height: 190px
         width: $square-width
         height: $square-height
         //background: #ed7e5f
-        background: #e01515
+        background: #ff0000
         opacity: 0.6
         border: 10px solid #282729
         border-top-right-radius: 100%
@@ -50,7 +50,7 @@ $square-height: 190px
       .square-bottom-left
         width: $square-width
         height: $square-height
-        background: #ffed0b
+        background: #faff00
         opacity: 0.6
         border: 10px solid #282729
         border-bottom-left-radius: 100%
@@ -82,7 +82,7 @@ $square-height: 190px
   box-shadow: inset 0 0 40px rgba(0,0,0,1)
   .text
     //color: white
-    font-size: 2.7em
+    font-size: 2em
   .label
     font-size: 0.9em
     font-weight: bold
@@ -128,10 +128,10 @@ $square-height: 190px
         height: 25px
         background: rgba(#cf0b05, 0.75)
         border-radius: 100%
-        border: 2px solid white
         cursor: pointer
         pointer-events: none
-        box-shadow: 0 0 7px rgba(0,0,0,0.5), inset 0 0 5px rgba(0,0,0,0.5)
+        border: 1px solid white
+        box-shadow: 0 0 5px rgba(0,0,0,0.7)
 
     .strict-wrap
       display: flex
@@ -144,10 +144,10 @@ $square-height: 190px
         height: 25px
         background: rgba(0,0,0,0.7)
         border-radius: 100%
-        border: 2px solid white
-        box-shadow: 0 0 7px rgba(0,0,0,0.5), inset 0 0 5px rgba(0,0,0,0.5)
         cursor: pointer
         pointer-events: none
+        border: 1px solid white
+        box-shadow: 0 0 5px rgba(0,0,0,0.7)
 
   .onoff
     display: flex
@@ -189,7 +189,7 @@ $square-height: 190px
   background: rgba(#54f707, 0.75) !important
   animation: slider-on linear forwards 100ms
 
-.start-on
+.start-game
   background: #00ff40 !important
   box-shadow: 0 0 30px #00ff40, inset 0 0 15px rgba(0,0,0,0.5)  !important
 
@@ -198,6 +198,14 @@ $square-height: 190px
     transform: translateX(0px)
   100%
     transform: translateX(28px)
+
+@keyframes animate-colortab
+  0%
+    opacity: 0.6
+  70%
+    opacity: 1
+  100%
+    opacity: 0.6
 
 .strict-on
   border: 2px solid #fa422f !important
